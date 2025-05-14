@@ -4,13 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BLOG | Everyday Git</title>
+    <link rel="stylesheet" href="index.css">
   </head>
   <body>
-    <h1>
-      <img src="images/Git-Logo-2Color.png" alt="Git Logo" width="100px" /><u>
-        Everyday Git</u
-      >
-    </h1>
+    <header>
+      The Celestial Group
+      <h1 id="home">
+        <img src="images/Git-Logo-2Color.png" alt="Git Logo" width="100px" class="title-img"/><u> 
+          Everyday Git</u
+        >
+      </h1>
+    </header>
 
     <div>
       <h2>I. What is Git</h2>
@@ -22,10 +26,10 @@
         versions of your work saving files like
         <code><b>finalWork.docx</b></code> or
         <code><b>ISwearThisIsFinal.docx</b></code
-        >. <br />
-        <br />
-        for you and all other persons doing projects as such,
-        <strong>Git</strong> is a power tool that easens the burden.
+        >
+               
+        For you and all other persons doing projects as such,
+        <strong>Git</strong> is a powerful tool that easens the burden.
       </p>
       <p>
         <strong>Git</strong> is a
@@ -46,7 +50,7 @@
         <li>Review and revert to previous versions of your work</li>
         <li>Experiment new feature without breaking the main project</li>
       </ul>
-      <br />
+     
       There are other Version Control systems like <b>Perforce</b>,
       <b>Subversion</b> and <b>Mercurial</b> but <strong>Git</strong> is the
       most widely used and has become more popular.
@@ -54,7 +58,7 @@
       <p>
         In this blog, we'll focus on <strong>Git</strong> and how it works as
         well as how it integrates with <strong>GitHub</strong>, a platform built
-        to hold Git repositories,(folders/directories), online. <br />
+        to hold Git repositories,(folders/directories), online.
       </p>
 
       <p>
@@ -69,17 +73,17 @@
       <h2>II. Getting Started with Git</h2>
       <p>
         To get started with Git, you need to install it on your local machine.
-        <br />
+       
       </p>
       <h3>1️⃣ Check whether Git is Installed</h3>
       Open your Terminal (Command Prompt on Windows, Terminal on macOS/Linux)
-      and type the following command: <br />
-      <code><strong>git --version</strong></code> <br />
-      <br />
+      and type the following command:
+      <code><strong>git --version</strong></code>
+     
       if Git is installed you'll see an output with a Git Version number like
-      this: <br />
-      <br />
-      <img src="images/gitVersion.png" alt="Git Version" width="450px" /> <br />
+      this:
+     
+      <img src="images/gitVersion.png" alt="Git Version" width="450px" />
       if you get an error like
       <code
         ><strong> <em>Command not found</em></strong></code
@@ -114,29 +118,29 @@
       </ol>
       <h4>For macOS:</h4>
       The easiest way is to install Git via Homebrew. If you already have
-      Homebrew installed, run: <br />
+      Homebrew installed, run:
       <code
         ><strong><em>brew install git</em></strong></code
       >
-      <br />
+     
 
       Alternatively, installing Xcode Command Line Tools also provides Git: Run:
-      <br />
+     
       <code
         ><strong><em>xcode-select --install</em></strong></code
       >
       <h4>For Linux (Debian/Ubuntu-based systems):</h4>
-      Run the following in your terminal: <br />
+      Run the following in your terminal:
       <code
         ><strong
           ><em>
-            sudo apt update <br />
+            sudo apt update
             sudo apt install git
           </em></strong
         ></code
       >
-      <br />
-      Once Installed, Verify by running <br />
+     
+      Once Installed, Verify by running
       <code
         ><strong><em>git --version</em></strong></code
       >
@@ -147,9 +151,6 @@
         After Installing Git, the next thing you need to do is to tell Git who
         you are. This is used to label each commit/save/update you make to the
         project with you name and email address. It like signing your work.
-        <br />
-        <br />
-
         This step is important as it provides ownership and identity both
         locally and when uploading/pushing you work to remote platforms like
         GitHub.
@@ -157,28 +158,24 @@
       <h3>1️⃣ Set Your Username</h3>
       Open your terminal/Command prompt and run this command (replace '<b
         >Your Name</b
-      >' with your actual name): <br />
+      >' with your actual name):
       <code><strong>git config --global user.name "Your Name"</strong></code>
-      <br />
-      <br />
-      afterwards run <code><strong>git config user.name</strong></code> <br />
-      to confirm <br />
-      Here is how it looks like: <br />
+      afterwards run this command to confirm  <code><strong>git config user.name</strong></code>
+      Here is how it looks like:
       <img src="images/gitName.png" alt="git Name" width="450px" />
       <h3>2️⃣ Set Your Email Address</h3>
       Next, set your email address (replace 'youremail@example.com' with your GitHub email):
-      Run: <br />
+      Run:
       <code
         ><strong
           >git config --global user.email "youremail@example.com</strong
         ></code
       >
-      <br />
-      <br />
-      afterwards run <code><strong>git config user.email</strong></code> <br />
-      to confirm <br />
-      Here is how it looks like: <br />
-      <img src="images/gitEmail.png" alt="Git Email" width="450px" /> <br />
+    
+      afterwards run <code><strong>git config user.email</strong></code>
+      to confirm
+      Here is how it looks like:
+      <img src="images/gitEmail.png" alt="Git Email" width="450px" />
     </div>
     <div>
       <h2>IV. Initializing a Git Repository</h2>
@@ -192,9 +189,9 @@
         A Git repository (or repo for short) is a storage space where Git tracks
         and manages all the changes to your project’s files. Think of it as a
         digital ledger that records the history of your project, allowing you to
-        view, revert, or branch off into different versions at any point. <br />
+        view, revert, or branch off into different versions at any point.
 
-        <br />
+       
         Let's see how we can create a Git repository:
       </p>
       <h3>How to Initialize a Git Repository</h3>
@@ -208,21 +205,21 @@
         folder) then run <code><strong> cd folder-name</strong></code> to
         navigate to your folder
       </p>
-      <br /><br />
-      Here is how it looks like: <br />
+     <br />
+      Here is how it looks like:
       <img src="images/gitFolder.png" alt="git Folder pic" width="450px" />
-      <br />
+     
       <h4>2️⃣ Initialize Git in the Folder</h4>
       <p>
-        After navigating to your project folder, run: <br />
+        After navigating to your project folder, run:
         <code><strong>git init</strong></code
         ><br />
         This command creates a hidden .git directory that Git uses to track
         changes in this folder. Now, your project is officially a Git
-        repository:) <br />
-        Something like this: <br />
+        repository:)
+        Something like this:
         <img src="images/gitRepo.png" alt="Git Repository" width="450px" />
-        <br />
+       
       </p>
     </div>
     <div>
@@ -247,27 +244,27 @@
       </ul>
       <h3>Adding files to the Staging Area</h3>
       <p>
-        To add files to the staging area, use the
-        <code><strong>git add file-name</strong></code
-        >(replace 'file-name' with actual name of your folder) command:
+        To add files to the staging area, use this command
+        (replace 'file-name' with actual name of your folder)
+        <code><strong>git add file-name</strong></code>
       </p>
-      <br />
-      Here is how it looks like: <br />
+     
+      Here is how it looks like:
       <img src="images/gitAddone.png" alt="git add one file" width="450px" />
-      <br />
+     
       To add multiple files to the Staging area:
-      <br />
+     
       <code><strong>git add file-1-name file-2-name file-3-name</strong></code
       ><br />
-      To add all changes (new, modified, and deleted files) run
+      To add all changes (new, modified, and deleted files) run:
       <code><strong>git add .</strong></code
-      >: <br />
+      >
       <img
         src="images/gitAddAll.png"
         alt="git add all directories"
         width="450px"
       />
-      <br />
+     
     </div>
     <div>
       <h2>VI. Committing Changes</h2>
@@ -280,9 +277,9 @@
       <h3>Writing Good Commit Messages</h3>
       <p>
         Good commit messages are crucial for understanding the history of your
-        project. <br />
+        project.
         The commit messages should be a continuation of the statement "This
-        commit is going to". <br />
+        commit is going to".
         In summary:
       </p>
       <ul>
@@ -301,7 +298,7 @@
       </ul>
       use <code><strong>git commit -m "commit-message"</strong></code> to commit
       your changes with the relevant commit message<br />
-      For Example: <br />
+      For Example:
       <img src="images/gitCommit.png" alt="git Commit" width="450px" /><br />
       Run <code><strong>git commit</strong></code> to open a text editor and
       write a more descriptive commit message if need be.<br />
@@ -314,7 +311,7 @@
       <h3>Reverting to a Previous Commit</h3>
       <p>
         To revert your repository to a previous commit: use
-        <code><strong>git revert 'commit-id' </strong></code> <br />
+        <code><strong>git revert 'commit-id' </strong></code>
         This command creates a new commit that undoes the changes made in the
         specified commit.
       </p>
@@ -349,29 +346,29 @@
         To create a new branch, Run:
         <code><strong>git branch new-branch-name</strong></code
         >(replace 'new-branch-name' with the actual name of the branch)
-        <br />For example: <br />
+       For example:
         <img
           src="images/gitBranch.png"
           alt="git branching"
           width="450px"
         /><br />
-        <br />
-        To create and switch to the new branch: <br />
-        Run: <br />
-        <code><strong>git checkout -b new-branch-name</strong></code> <br />
-        or <br />
+       
+        To create and switch to the new branch:
+        Run:
+        <code><strong>git checkout -b new-branch-name</strong></code>
+        or
         <code><strong>git switch -c new-branch-name</strong></code>
       </p>
     </div>
     <div>
       <h2>IX. Viewing All Branches</h2>
       <p>
-        To lis all branches in you repository: Run
+        To list all branches in you repository: Run
         <code><strong>git branch</strong></code
         ><br />
-        For Example: <br />
+        For Example:
         <img src="images/gitBranchview.png" alt="git branch" width="450px" />
-        <br />
+       
         The current active branch is indicated with an asterisk (*)
       </p>
     </div>
@@ -379,20 +376,20 @@
       <h2>X. Switching Active Branches</h2>
       <p>To switch to another branch:</p>
       Run: <code><strong>git switch branch-name</strong></code> (replace
-      'branch-name' with the actual name of the branch) <br />
-      or <br />
+      'branch-name' with the actual name of the branch)
+      or
       Run:
       <code><strong>git checkout branch-name</strong></code
       ><br />
-      Here is how it looks like: <br />
+      Here is how it looks like:
       <img src="images/gitSwitch.png" alt="git switch branches" width="450px" />
     </div>
     <div>
       <h2>XI. Merging a branch</h2>
       <p>
-        To merge changes from one branch into the current branch: <br />
+        To merge changes from one branch into the current branch:
         Run: <code><strong>git merge branch-name</strong></code> (replace
-        'branch-name' with the actual name of the branch) <br />
+        'branch-name' with the actual name of the branch)
         Ensure you're on the branch you want to merge into (for example, main)
         before running the merge command.
       </p>
@@ -403,7 +400,7 @@
           width="450px"
         />
         <figcaption>
-          this figure shows how to list all branches, switch to the master
+          This figure shows how to list all branches, switch to the master
           branch and merging a branch to the master
         </figcaption>
       </figure>
@@ -411,19 +408,19 @@
     <div>
       <h2>XII. Deleting a Branch</h2>
       <p>
-        To delete a local branch: <br />
-        Run: <br />
-        <code><strong>git branch -d branch-name</strong></code> <br />
-        If the branch hasn't been merged and you still want to delete it: <br />
-        Run: <br />
-        <code><strong>git branch -D branch-name</strong></code> <br />
-        Here is how it looks like: <br />
+        To delete a local branch:
+        Run:
+        <code><strong>git branch -d branch-name</strong></code>
+        If the branch hasn't been merged and you still want to delete it:
+        Run:
+        <code><strong>git branch -D branch-name</strong></code>
+        Here is how it looks like:
         <img
           src="images/gitDelete.png"
           alt="git delete a branch"
           width="450px"
         />
-        <br />
+       
       </p>
     </div>
     <div>
@@ -431,7 +428,7 @@
       <p>
         Well Done!🫡 By now, you’ve gone through the essential Git basics—setting
         up Git, creating a repository, making commits, working with branches,
-        and more. That’s a solid foundation! <br />
+        and more. That’s a solid foundation!
 
         But Git is a powerful tool with even more to explore. Here are some
         recommendations:
@@ -476,9 +473,9 @@
           <h3>Practice on Real Projects</h3>
           <p>
             The best way to solidify your Git knowledge is through practice.
-            Try: Starting a personal project on GitHub <br />
-            Contributing to open-source repositories <br />
-            Pair programming or collaborating with a friend <br />
+            Try: Starting a personal project on GitHub
+            Contributing to open-source repositories
+            Pair programming or collaborating with a friend
           </p>
         </li>
       </ol>
