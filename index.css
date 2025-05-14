@@ -56,13 +56,13 @@ div{
     width: 75%;
     margin: 1rem auto;
     background-color: #e7fafe;
-    padding: 1rem 3rem;
+    padding: .1rem 3rem;
     border-radius:0 1rem;
     box-shadow:0 1px  4px rgb(242, 239, 233)
 }
 h2{
     color: darkslateblue;
-    margin: 2rem;
+    margin: .5rem;
     text-decoration: underline 2px darksalmon;
     font-size: 2rem;
 }
@@ -70,7 +70,7 @@ h3{
     color: brown;
     text-decoration: dashed underline 2px darkorange;
     font-size: 1.3rem;
-    margin: 1rem 0;
+    margin: .2rem 0;
 }
 h4{
     font-size: 1.2rem;
